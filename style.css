@@ -60,6 +60,11 @@
     width: 215px;
     height: 54px;
 }
+.igual{
+    position: absolute;
+    left: 74%;
+    height: 102px;
+}
 p{
     top: 70px;
     color: black;

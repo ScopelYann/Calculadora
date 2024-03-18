@@ -28,9 +28,17 @@ function apagar(){
 }
 function realizar(){
     let resultado = document.getElementById('resultado').innerHTML
-    if (resultado)
-    {
+    if (resultado){
         document.getElementById('resultado').innerHTML = eval(resultado)
+    }
+    else{      
+        let resultado = document.getElementById('resultado')
+        resultado.innerHTML = 'Nada A Calcular'
+        resultado.style.fontSize = '15px'
+        setTimeout(()=>{
+            resultado.innerHTML = ""
+            resultado.style.fontSize = '30px'
+        },2000)
     }
 }
 clean.addEventListener('click', clear)
